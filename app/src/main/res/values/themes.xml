@@ -1,15 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 定义基础应用程序主题，基于Material Design的夜间主题，无动作栏 -->
     <!-- Base application theme. -->
     <style name="Base.Theme.SnapchatSplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 在这里自定义亮色主题的设置 -->
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- 定义应用程序的主题，继承自Base.Theme.SnapchatSplashScreen -->
     <style name="Theme.SnapchatSplashScreen" parent="Base.Theme.SnapchatSplashScreen" />
-    
+
+    <!-- 定义启动屏幕的主题，基于Android的SplashScreen主题 -->
     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <!-- 设置启动屏幕的背景颜色 -->
         <item name="windowSplashScreenBackground">@color/yellow</item>
+        <!-- 设置启动屏幕的动画图标 -->
         <item name="windowSplashScreenAnimatedIcon">@drawable/snapchatlogo</item>
+        <!-- 设置启动屏幕后的主题为Base.Theme.SnapchatSplashScreen -->
         <item name="postSplashScreenTheme">@style/Base.Theme.SnapchatSplashScreen</item>
     </style>
 </resources>
